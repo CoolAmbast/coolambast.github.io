@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #009688;
+    padding: 20px;
+}
+
+.resume-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 40px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+/* Header styles */
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #009688;
+    padding-bottom: 20px;
+}
+
+.name {
+    font-size: 36px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.title {
+    font-size: 20px;
+    color: #009688;
+    margin-bottom: 15px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+}
+
+.contact-item a {
+    color: #009688;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-item a:hover {
+    color: #016c61;
+    text-decoration: underline;
+}
+
+/* Section styles */
+.section {
+    margin-bottom: 25px;
+}
+
+.section-title {
+    font-size: 22px;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Skills section */
+.skills-category {
+    margin-bottom: 15px;
+}
+
+.skills-category-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px 15px;
+    margin-left: 20px;
+}
+
+/* Projects section */
+.project {
+    margin-bottom: 20px;
+}
+
+.project-title {
+    font-weight: bold;
+    font-size: 18px;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.project-description {
+    margin-left: 20px;
+}
+
+.project-description ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Education section */
+.education-title {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.education-details {
+    margin-left: 20px;
+}
+
+/* Additional info section */
+.additional-info ul {
+    list-style-type: disc;
+    margin-left: 40px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .resume-container {
+        padding: 20px;
+    }
+    
+    .name {
+        font-size: 28px;
+    }
+    
+    .title {
+        font-size: 18px;
+    }
+    
+    .contact-info {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
